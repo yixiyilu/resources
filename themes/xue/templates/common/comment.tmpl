@@ -1,6 +1,6 @@
 {{ define "xue/comment" }}
     <link rel="stylesheet"
-          href="{{ .blogVars.StaticRootPath }}/resources/themes/xue/static/css/aries-comment.css">
+          href="{{ .blogVars.StaticRootPath }}/themes/xue/static/css/aries-comment.css">
     <style>
         .vditor-ir pre.vditor-reset {
             background-color: var(--panel-background-color) !important;
@@ -50,7 +50,7 @@
 
         loadScripts([
             "https://npm.elemecdn.com/vue@2.6.12/dist/vue.min.js",
-            "{{ .blogVars.StaticRootPath }}/resources/themes/xue/static/js/aries-comment.js",
+            "{{ .blogVars.StaticRootPath }}/themes/xue/static/js/aries-comment.js",
         ]).then(renderComment);
     </script>
 {{ end }}
